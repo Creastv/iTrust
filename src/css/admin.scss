@@ -1,0 +1,17 @@
+@import "../sass/variable";
+@import "../sass/mixins";
+@import "../sass/typography";
+@import "../sass/global";
+@import "../sass/form";
+@import "../sass/buttons";
+
+.wp-block-spacer {
+  background: rgba(0, 0, 0, 0.1) !important;
+  &:after {
+    content: "Odstęp";
+    display: block;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,37 @@
+.socialmedia__footer{
+    background-color: $main2;
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        margin: 0;
+        padding: 30px 0;
+        li{
+            margin: 0 15px;
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                background-color: #fff;
+                border-radius:100%;
+                text-align: center;
+                padding: 10px;
+                box-shadow: 0 0px 0px 0px #6053dc;
+                @include trans;
+                svg{
+                    fill:$main2;
+                    @include trans;
+                }
+                &:hover{
+                    box-shadow: 0 0px 0px 3px #6053dc;
+                    svg{
+                        fill:$main!important;
+                    }
+                }
+            }
+        }
+    }
+}

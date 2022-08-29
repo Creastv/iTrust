@@ -1,0 +1,142 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color:$main;
+}
+p,
+li,
+td,
+th {
+  color: $p;
+}
+.entry-content{
+  p{
+    text-align: justify;
+  }
+}
+.has-text-align-left{
+  text-align:left!important;
+}
+b,
+strong {
+  font-weight: 600;
+}
+a {
+  text-decoration: none;
+  @include trans;
+  &:active {
+    color: darken($main, 20%);
+  }
+  &:hover {
+    color: lighten($main, 20%);
+  }
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.white-f{
+  color:#fff;
+  *{
+    color:#fff!important;
+  }
+}
+.page-title,
+.title-section {
+  font-size: 46px;
+  color: $main;
+  letter-spacing: 0.3px;
+  line-height: 1.1;
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 30px;
+  position: relative;
+  @media #{$xs} {
+    font-size: 31px;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    max-width: 100% !important;
+    width: 200px;
+    height: 2px;
+    @include grad2;
+  }
+}
+.page-title.text-center,
+.title-section.text-center {
+  &:before {
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+.title-section.text-right {
+  right: 0px;
+  left: initial;
+  transform: initial;
+}
+#breadcrumbs {
+  padding: 30px 0;
+}
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857;
+    color: #333333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.wp-block-code code {
+    display: block;
+    font-family: inherit;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    font-size: 20px;
+}
+
+.single-wrap{
+      padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .14);
+    border-radius:10px;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
