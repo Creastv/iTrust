@@ -1,11 +1,8 @@
 
 </main>
 <footer id="footer" itemscope itemtype="http://schema.org/WPFooter">
-    <div class="socialmedia__footer">
-        <div class="container">
-            <?php get_template_part('templates_parts/footer/socialmedia'); ?>
-        </div>
-    </div>
+    
+     <?php get_template_part('templates_parts/footer/socialmedia'); ?>
     <div id="main__footer">
         <div class="container">
             <div class="row">

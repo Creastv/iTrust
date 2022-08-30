@@ -5,6 +5,8 @@ $git        = get_theme_mod('git');
 $in         = get_theme_mod('in');
 ?>
 <?php if ( $fb || $tw || $git || $in ) { ?>
+    <div class="socialmedia__footer">
+        <div class="container">
 <ul>
     <?php if ( $fb ) { ?>
     <li>
@@ -68,4 +70,6 @@ $in         = get_theme_mod('in');
     </li>
     <?php } ?>
 </ul>
+    </div>
+    </div>
 <?php } ?>
