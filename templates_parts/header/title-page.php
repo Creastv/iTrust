@@ -1,9 +1,21 @@
   <h1 class="page-title">
-      <?php if ( is_category() ) :
+      <?php 
+	  $current_term = single_term_title( "", false );
+	  if ( is_category() ) :
 	  single_cat_title();	
 		// the_title();					
 	elseif (is_404()) :
 		_e( '404', 'iT');
+
+	elseif (is_tax()  ) :
+	    _e(   $current_term, 'iT');
+
+	elseif (is_singular('shops')) :
+		the_title();
+
+	elseif (is_post_type('shops')) :
+		_e( 'Sklepy', 'iT');
+	
 	elseif (is_page() ) :
 		the_title();
 	elseif ( is_tag() ) :

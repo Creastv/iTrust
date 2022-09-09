@@ -110,3 +110,11 @@ function filter_plugin_updates( $value ) {
 	return $value;
 }
 add_filter( 'site_transient_update_plugins', 'filter_plugin_updates' );
+
+
+function is_post_type($type){
+    global $wp_query;
+    if($type == get_post_type($wp_query->post->ID)) 
+        return true;
+    return false;
+}
